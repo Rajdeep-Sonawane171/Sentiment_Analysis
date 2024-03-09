@@ -1,0 +1,28 @@
+[2024-03-04 11:02:18,995] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: s3_to_hdfs_on_emr.add_step_to_emr_cluster 2024-03-04T11:02:14.735518+00:00 [queued]>
+[2024-03-04 11:02:19,042] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: s3_to_hdfs_on_emr.add_step_to_emr_cluster 2024-03-04T11:02:14.735518+00:00 [queued]>
+[2024-03-04 11:02:19,043] {taskinstance.py:1087} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-04 11:02:19,044] {taskinstance.py:1088} INFO - Starting attempt 1 of 2
+[2024-03-04 11:02:19,045] {taskinstance.py:1089} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-04 11:02:19,111] {taskinstance.py:1107} INFO - Executing <Task(EmrAddStepsOperator): add_step_to_emr_cluster> on 2024-03-04T11:02:14.735518+00:00
+[2024-03-04 11:02:19,117] {standard_task_runner.py:52} INFO - Started process 169 to run task
+[2024-03-04 11:02:19,123] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 's3_to_hdfs_on_emr', 'add_step_to_emr_cluster', '2024-03-04T11:02:14.735518+00:00', '--job-id', '62', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion_dag/main.py', '--cfg-path', '/tmp/tmpqq7lu23j', '--error-file', '/tmp/tmpcl9i_agu']
+[2024-03-04 11:02:19,125] {standard_task_runner.py:77} INFO - Job 62: Subtask add_step_to_emr_cluster
+[2024-03-04 11:02:19,244] {logging_mixin.py:104} INFO - Running <TaskInstance: s3_to_hdfs_on_emr.add_step_to_emr_cluster 2024-03-04T11:02:14.735518+00:00 [running]> on host 4f05eb4e7e44
+[2024-03-04 11:02:19,438] {taskinstance.py:1300} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=s3_to_hdfs_on_emr
+AIRFLOW_CTX_TASK_ID=add_step_to_emr_cluster
+AIRFLOW_CTX_EXECUTION_DATE=2024-03-04T11:02:14.735518+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-03-04T11:02:14.735518+00:00
+[2024-03-04 11:02:19,439] {base_aws.py:368} INFO - Airflow Connection: aws_conn_id=aws_default
+[2024-03-04 11:02:19,463] {base_aws.py:166} INFO - Credentials retrieved from login
+[2024-03-04 11:02:19,464] {base_aws.py:82} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2024-03-04 11:02:19,467] {base_aws.py:84} INFO - Creating session with aws_access_key_id=AKIA4MTWLLCCM67BOY3J region_name=us-east-1
+[2024-03-04 11:02:19,508] {base_aws.py:157} INFO - role_arn is None
+[2024-03-04 11:02:19,718] {emr_add_steps.py:90} INFO - Adding steps to j-E65C9OZZ8BJF
+[2024-03-04 11:02:21,105] {emr_add_steps.py:103} INFO - Steps ['s-05298171CX53IY1ISEXQ'] added to JobFlow
+[2024-03-04 11:02:21,225] {taskinstance.py:1204} INFO - Marking task as SUCCESS. dag_id=s3_to_hdfs_on_emr, task_id=add_step_to_emr_cluster, execution_date=20240304T110214, start_date=20240304T110218, end_date=20240304T110221
+[2024-03-04 11:02:21,350] {taskinstance.py:1265} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-03-04 11:02:21,386] {local_task_job.py:151} INFO - Task exited with return code 0
