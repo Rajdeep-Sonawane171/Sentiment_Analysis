@@ -16,4 +16,5 @@ PS C:\Users\admin\Sentiment_Analysis> docker compose up
 
 You can Check out the detail project report
 ```
+https://github.com/Rajdeep-Sonawane171/Sentiment_Analysis/blob/main/Project_report/DETAIL_PROJECT_REPORT.pdf
 ```
