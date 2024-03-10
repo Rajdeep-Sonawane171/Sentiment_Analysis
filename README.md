@@ -9,5 +9,8 @@ Use spark machine learning for creating the model.
 ![sentiment arch](https://github.com/Rajdeep-Sonawane171/Sentiment_Analysis/assets/113442602/796ae19b-d9a4-4f03-8e83-d4da33272e80)
 
 For running the airflow image in docker use these commond 
-```PS C:\Users\admin\Sentiment_Analysis> docker compose up```
+
+```
+PS C:\Users\admin\Sentiment_Analysis> docker compose up
+```
 
